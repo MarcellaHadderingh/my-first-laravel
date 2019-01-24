@@ -11,12 +11,16 @@
 |
 */
 
+Route::get('/', 'PagesController@home');
+
+
+/*
 Route::get('/', function () {
     return view('welcome')->with([
         'tasks' => [' some tasks']
     ]);
+
     
-    /*
 
     return view('welcome')->withTasks([
         'Go to the store',
@@ -39,7 +43,7 @@ Route::get('/', function () {
     */
    
     
-});
+//});
 
 
 Route::get('/about', function () { //example.com/contact
