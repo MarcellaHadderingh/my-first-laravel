@@ -12,7 +12,33 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome')->with([
+        'tasks' => [' some tasks']
+    ]);
+    
+    /*
+
+    return view('welcome')->withTasks([
+        'Go to the store',
+        'Go to the market',
+        'Go to work',
+        'Go to the concert'
+    ]);
+
+    $tasks = [
+        'Go to the store',
+        'Go to the market',
+        'Go to work',
+        'Go to the concert'
+    ];
+
+    return view('welcome', [
+        'tasks' => $tasks,
+    ]);
+    
+    */
+   
+    
 });
 
 
