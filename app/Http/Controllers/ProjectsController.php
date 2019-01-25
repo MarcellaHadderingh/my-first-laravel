@@ -12,4 +12,11 @@ class ProjectsController extends Controller
 
         return view('projects.index', compact('projects'));
     }
+
+    public function create()
+    {
+       $projects = Project::all();
+
+        return view('projects.create');
+    }
 }

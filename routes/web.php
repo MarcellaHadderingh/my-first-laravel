@@ -55,3 +55,5 @@ Route::get('/contact', function () { //example.com/contact
 });
 
 Route::get('/projects', 'ProjectsController@index');
+
+Route::get('/projects/create', 'ProjectsController@create');
